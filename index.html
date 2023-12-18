@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Carrito de Compras</title>
+</head>
+<body>
+
+    <header>
+        <h1>Carrito de Compras</h1>
+    </header>
+
+    <main>
+        <div id="productos">
+            <h2>Productos</h2>
+            <div class="producto" data-nombre="Producto 1" data-precio="10.00">
+                <p>Producto 1 - $10.00</p>
+                <button onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-nombre="Producto 2" data-precio="20.00">
+                <p>Producto 2 - $20.00</p>
+                <button onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+            </div>
+            <!-- Agrega más productos según sea necesario -->
+        </div>
+
+        <div id="carrito">
+            <h2>Carrito</h2>
+            <ul id="lista-carrito">
+                <!-- Los productos seleccionados se mostrarán aquí -->
+            </ul>
+            <p>Total: $<span id="total">0.00</span></p>
+            <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Carrito de Compras</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
